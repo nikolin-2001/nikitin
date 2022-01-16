@@ -7,5 +7,6 @@ class KomplektSerializer(serializers.ModelSerializer):
         fields = ('id',
                   'name',
                   'description',
+                  'price',
                   'published',
                   'year')
