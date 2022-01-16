@@ -91,7 +91,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'usersdb',
         'USER': 'postgres',
-        'PASSWORD': os.environ['DATABASE_PASSWORD'] if 'DATABASE_PASSWORD' in os.environ else '',
+        'PASSWORD': 'ps_password',
         'HOST': 'localhost',
         'PORT': '5432',
     }
@@ -139,3 +139,8 @@ STATIC_URL = 'static/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+
+CORS_ORIGIN_ALLOW_ALL = False
+CORS_ORIGIN_WHITELIST = (
+    'http://localhost:8081',
+)
