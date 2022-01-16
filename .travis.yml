@@ -11,5 +11,5 @@ script:
 deploy:
   provider: heroku
   api_key:
-    secure:
+    secure: quQRo1EOg+jo6CKDUxuA1yjP1b79PKlFKZBU1OjQymS7+8uS5YTxv07GYE6+ipGPWy5Gn/gilebW4Wrua/Tc1E+wz9XH01p+Bt7Gar/gpyQqvAzf8o8Lrxxj+2RpcePPnwBgdVx22QWyZau8/oOptfIv0/Y1QW7VOpTtXjgJ8Sa34NQ85iNtHmK6/uq4ZRJ6AnxJL0CmqqWZqr6IHyxREglsHK7ndbH0DMdkXpXAvYjh5uQVCzJvFh+oo16MxjAfLdhHXb4ciUyuUXHTM3Sts8O/ENhgUiO+suAx2oi9y3zoXGoVn+tZZmjBMY75lbscfHRC8PMZW5R5tJhz+9KIUdacpSx6pCTC8RE9gP9ihnRDS/c4dy/N4CF44LFJdwDPCagnLixoI7UlI5I40F88WWm1xk0CgsnIm169MeGLI49fs0sEkLJoa+tAAQPST0vBHn9S9AuqnCNBBUScJ5ZZ8SIkTYqE8PUgxyCKZ8Z98uUBxIMCbvyqfDn55VErwzeu0IMdxDKrxr5BU+ykYnZG1rXQ8mGfUo/Bke1lCmMGf1qKd6gg1s/7HHLK0BDpBlk1W8CBRPr42T+/u54jrvJCtRlwcUQDZy11HX/T/VdQfD+6Cy4lvl+ONxk+OaoHokP/ouZCqVp1dbfwzjvk75QK9MaTqiirpulDvvRZ4RtOF0o=
   app: nikitin
