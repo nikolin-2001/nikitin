@@ -91,7 +91,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'usersdb',
         'USER': 'postgres',
-        'PASSWORD': 'ps_password',
+        'PASSWORD': os.environ['DATABASE_PASSWORD'] if 'DATABASE_PASSWORD' in os.environ else '',
         'HOST': 'localhost',
         'PORT': '5432',
     }
