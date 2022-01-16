@@ -1,0 +1,17 @@
+psycopg2
+django-cors-headers
+pyyaml
+django
+dj-database-url
+django-heroku
+djangorestframework
+markdown
+django-filter
+gunicorn
+whitenoise
+django_extensions
+graphviz
+dotplus
+pytest
+mypy
+pycodestyle
