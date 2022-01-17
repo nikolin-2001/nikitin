@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Komplekt
+from .models import Komplekt, Music
 
-# Register your models here.
 admin.site.register(Komplekt)
+admin.site.register(Music)

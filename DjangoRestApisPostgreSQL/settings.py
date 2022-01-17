@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'rest_framework',
     'tutorials.apps.TutorialsConfig',
     'corsheaders',
+    'django_extensions',
 ]
 
 MIDDLEWARE = [
@@ -152,3 +153,7 @@ CORS_ORIGIN_ALLOW_ALL = False
 CORS_ORIGIN_WHITELIST = (
     'http://localhost:8081',
 )
+
+GRAPH_MODELS = {
+  'app_labels': ["Myapi1"],
+}
