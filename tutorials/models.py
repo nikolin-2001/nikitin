@@ -13,5 +13,5 @@ class Music(models.Model):
     name = models.CharField(max_length=100)
     price = models.CharField(max_length=200, blank=False, default='')
     descriptions = models.TextField(max_length=3000, blank=False, default='')
-    def __str__(self):
-        return self.name
+    published = models.BooleanField(default=False)
+

@@ -1,5 +1,5 @@
 from django.urls import re_path
-from .views import komplekt_list, komplekt_detail, komplekt_list_published, music_detail, music_list, music_list_published
+from .views import komplekt_list, komplekt_detail, komplekt_list_published, music_list, music_detail, music_list_published
 
 urlpatterns = [
     re_path(r'^api/tutorials$', komplekt_list),

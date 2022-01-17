@@ -1,9 +1,6 @@
-from django.shortcuts import render
-
 from django.http.response import JsonResponse
 from rest_framework.parsers import JSONParser
 from rest_framework import status
-
 from .models import Komplekt, Music
 from .serializers import KomplektSerializer, MusicSerializer
 from rest_framework.decorators import api_view
@@ -68,19 +65,13 @@ def komplekt_list_published(request):
         return JsonResponse(komplekts_serializer.data, safe=False)
 
 
-
 @api_view(['GET', 'POST', 'DELETE'])
 def music_list(request):
+    music = Music.objects.filter(published=True)
+
     if request.method == 'GET':
-        musics = Music.objects.all()
-
-        title = request.GET.get('title', None)
-        if title is not None:
-            musics = musics.filter(title__icontains=title)
-
-        musics_serializer = MusicSerializer(musics, many=True)
+        musics_serializer = MusicSerializer(music, many=True)
         return JsonResponse(musics_serializer.data, safe=False)
-        # 'safe=False' for objects serialization
 
     elif request.method == 'POST':
         music_data = JSONParser().parse(request)
@@ -127,4 +118,3 @@ def music_list_published(request):
     if request.method == 'GET':
         musics_serializer = MusicSerializer(musics, many=True)
         return JsonResponse(musics_serializer.data, safe=False)
-

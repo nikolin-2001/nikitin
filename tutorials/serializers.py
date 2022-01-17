@@ -16,6 +16,7 @@ class KomplektSerializer(serializers.ModelSerializer):
 class MusicSerializer(serializers.ModelSerializer):
     model = Music
     fields = ('id',
-        'name',
-        'price',
-        'descriptions')
+              'name',
+              'price',
+              'descriptions',
+              'published')
